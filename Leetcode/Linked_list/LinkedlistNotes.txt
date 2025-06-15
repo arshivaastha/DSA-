@@ -14,4 +14,5 @@ Memory Allocation: Typically allocated to the whole array
 Insertion/Deletion: Inefficient
 Access: Random
 
-Link to gfg notes:https://www.geeksforgeeks.org/dsa/linked-list-data-structure/
+Link to gfg notes:
+https://www.geeksforgeeks.org/dsa/linked-list-data-structure/
