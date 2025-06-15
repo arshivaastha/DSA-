@@ -1,2 +1,2 @@
-# DSA-
-Maintain a readme for every learning.
+# DSA
+Consistency is the key.
