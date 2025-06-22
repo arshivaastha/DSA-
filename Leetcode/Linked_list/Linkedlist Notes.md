@@ -29,6 +29,7 @@ public void reverseList()
        if(head == null || head.next == null) {
            return;
        }
+       
        Node prevNode = head;
        Node currNode = head.next;
        while(currNode != null) {
@@ -62,6 +63,7 @@ Time complexity - O(n)
 Space complexity - O(1)  
 
 LinkedList<Integer> list2 = new LinkedList<>();
+
        list2.add(1);
        list2.add(2);
        Collections.reverse(list2);
