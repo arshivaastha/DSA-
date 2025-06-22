@@ -24,11 +24,11 @@ Reverse a Linked List without using extra space.
 Time complexity - O(n)
 Space complexity - O(1)
 
-public void reverseList() {
+public void reverseList() 
+{
        if(head == null || head.next == null) {
            return;
        }
-
        Node prevNode = head;
        Node currNode = head.next;
        while(currNode != null) {
