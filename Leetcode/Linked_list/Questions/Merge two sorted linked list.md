@@ -73,10 +73,73 @@ public class Main {
 Initializing pointers at the head of the two lists, compare the values of the nodes and the smaller value node becomes the next
 node in the merged list. The pointers are updated until one list is entirely merged, then attach the remaining nodes of the
 other list directly to the merged list as they are already sorted.
+### Intuition
+When I saw the problem, I immediately thought of the merge step in merge sort, where two sorted lists are combined into a single sorted list. Since linked lists are involved, pointer manipulation is key. A dummy node helps manage the new list cleanly without needing special handling for the head.
+
+### Approach
+- Create a dummy node to act as the starting point of the merged list.
+- Use a current pointer to build the merged list as you iterate.
+- Compare the values at the heads of l1 and l2, attach the smaller one to current.next, and move the respective pointer forward.
+- Continue this process until either list is exhausted.
+- Attach any remaining nodes (since the lists are sorted, no more comparisons are needed).
+- Return dummy.next as the head of the merged list.
+### Complexity
+Time complexity:
+O(n+m) — where ( n ) and ( m ) are the lengths of l1 and l2.
+
+Space complexity:
+O(1) — No extra space is used beyond pointers.
 ![image](https://github.com/user-attachments/assets/bf566ffc-1661-4f97-a75b-4ab63ff074d4)
 
+> ### Code
 ````
+class Solution {
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode dummy = new ListNode(-1); // 🎯 Dummy node for simpler head management
+        ListNode current = dummy; // 📍 Pointer to track the current end of merged list
+
+        while (list1 != null && list2 != null) {
+            if (list1.val <= list2.val) {
+                current.next = list1; // ⬅️ Append smaller value from list1
+                list1 = list1.next;
+            } else {
+                current.next = list2; // ➡️ Append smaller value from list2
+                list2 = list2.next;
+            }
+            current = current.next; // 🏃 Move to next in merged list
+        }
+
+        // 🔗 Attach any remaining nodes from either list
+        if (list1 != null) current.next = list1;
+        if (list2 != null) current.next = list2;
+
+        return dummy.next; // 🚀 Return head of merged list (after dummy)
+    }
+}
+
 
 ````
+> ### Recursion
+> 
+````
 
+class Solution {
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+
+        if(list1!=null && list2!=null){
+        if(list1.val<list2.val){
+            list1.next=mergeTwoLists(list1.next,list2);
+            return list1;
+            }
+            else{
+                list2.next=mergeTwoLists(list1,list2.next);
+                return list2;
+        }
+        }
+        if(list1==null)
+            return list2;
+        return list1;
+    }
+}
+````
 
