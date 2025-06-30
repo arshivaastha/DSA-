@@ -2,6 +2,8 @@
 ### Q: 
 https://leetcode.com/problems/merge-two-sorted-lists/description/
 ### Solution: 
+https://youtu.be/jXu-H7XuClE
+
 https://takeuforward.org/data-structure/merge-two-sorted-linked-lists/
 
 >### Brute force:
