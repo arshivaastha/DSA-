@@ -20,4 +20,5 @@ public static int binarySearch(data_type[] arr, int fromIndex, int toIndex, data
 ```
 >![image](https://github.com/user-attachments/assets/b21d68eb-3b2e-40ec-aa85-26f0d5bd2e77)
 
->
+> ![image](https://github.com/user-attachments/assets/9f5d303c-df18-42d2-ba0a-31d93b8e2b09)
+
