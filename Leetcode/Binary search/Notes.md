@@ -22,3 +22,7 @@ public static int binarySearch(data_type[] arr, int fromIndex, int toIndex, data
 
 > ![image](https://github.com/user-attachments/assets/9f5d303c-df18-42d2-ba0a-31d93b8e2b09)
 
+
+> Overflow case
+> ![image](https://github.com/user-attachments/assets/ceff4d29-486b-4ecb-a1ef-33cfc3f2af50)
+
