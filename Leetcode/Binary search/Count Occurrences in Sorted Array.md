@@ -1,5 +1,7 @@
 # Count Occurrences in Sorted Array
 
+https://www.youtube.com/watch?v=pLT_9jwaPLs&t=19s
+
 ![image](https://github.com/user-attachments/assets/71774612-a9da-4127-a041-613d9a1cdc63)
 
 ```
