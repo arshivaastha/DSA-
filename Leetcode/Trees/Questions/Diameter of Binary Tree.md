@@ -3,7 +3,7 @@ https://leetcode.com/problems/diameter-of-binary-tree/description/
 
 
 
-
+https://takeuforward.org/data-structure/calculate-the-diameter-of-a-binary-tree/
 ## Solution:
 
 ```
