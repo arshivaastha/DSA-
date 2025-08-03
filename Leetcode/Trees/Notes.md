@@ -22,6 +22,10 @@
 
 <img width="393" height="180" alt="image" src="https://github.com/user-attachments/assets/31746731-8870-431b-8ca0-d7e76a2efa69" />
 
+  > Method 2:
+<img width="461" height="106" alt="image" src="https://github.com/user-attachments/assets/e83558f0-395b-4b8a-a971-2280c19baada" />
+
+
 
 
 
